@@ -90,32 +90,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是我第一篇在Hexo写下的blog，使用的是Markdown语法来编写，在这里做学习笔记。查看完整的<a href="http://wowubuntu.com/markdown/" title="Markdown语法教程" target="_blank" rel="external">Markdown的语法教程</a></p>
+        <p>这是我第一篇在Hexo写下的blog，Hexo的博客使用的是Markdown语法来编写，在这里做学习笔记。可以点击<a href="http://wowubuntu.com/markdown/" title="Markdown语法教程" target="_blank" rel="external">Markdown的语法教程</a>查看完整的markdown语法</p>
 <h2 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h2><h3 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h3><p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
 <p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 &lt;br /&gt; 标签。</p>
 <p>如果你确实想要依赖 Markdown 来插入 &lt;br /&gt; 标签的话，在插入处先按入两个以上的空格然后回车。</p>
 <p>的确，需要多费点事（多加空格）来产生 &lt;br /&gt; ，但是简单地「每个换行都转换为 &lt;br /&gt; 」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。</p>
 <h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h3><p>以上所说的换行我试过以后，发现只要有换行符就直接换行了，不用打两个空格。比如我这里直接回车换行，<br>没有打两个空格也换行了。</p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="Markdown支持两种形式的标题"><a href="#Markdown支持两种形式的标题" class="headerlink" title="Markdown支持两种形式的标题"></a>Markdown支持两种形式的标题</h3><h3 id="类Setext语法"><a href="#类Setext语法" class="headerlink" title="类Setext语法"></a>类<a href="javascript:void(0);" target="_blank" rel="external">Setext</a>语法</h3><p>类Setext形式是用底线的形式，利用’=’（最高阶标题）和’-‘（第二阶标题），例如：</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="Markdown支持两种形式的标题"><a href="#Markdown支持两种形式的标题" class="headerlink" title="Markdown支持两种形式的标题"></a>Markdown支持两种形式的标题</h3><h3 id="类Setext语法"><a href="#类Setext语法" class="headerlink" title="类Setext语法"></a>类<a href="javascript:void(0);" target="_blank" rel="external">Setext</a>语法</h3><p>类Setext形式是用底线的形式，利用<code>=</code>（最高阶标题）和<code>-</code>（第二阶标题），例如：</p>
 <pre><code>This is an H1
 =============
 
 This is an H2
 -------------
 </code></pre><p>任何数量的 ‘=’ 和 ‘-‘ 都可以有效果。</p>
-<h3 id="类Atx语法（常用）"><a href="#类Atx语法（常用）" class="headerlink" title="类Atx语法（常用）"></a>类<a href="javascript:void(0);" target="_blank" rel="external">Atx</a>语法（常用）</h3><p>类Atx形式是在行首插入 1 到 6 个的 ‘#’ 和一个空格对应 1 到 6 阶的标题，例如：</p>
+<h3 id="类Atx语法（常用）"><a href="#类Atx语法（常用）" class="headerlink" title="类Atx语法（常用）"></a>类<a href="javascript:void(0);" target="_blank" rel="external">Atx</a>语法（常用）</h3><p>类Atx形式是在行首插入 1 到 6 个的 <code>#</code> 和一个空格对应 1 到 6 阶的标题，例如：</p>
 <pre><code># This is an H1
 ## This is an H2
 ###### This is an H6
 </code></pre><p>也可以在行尾选择性的添加 ‘#’ ，数量不需要与行首对应，只是为了美观用，例如：</p>
 <pre><code># This is an H1 #
 ## This is an H2 ##
-###### This is an H6 ######    
-</code></pre>
+### This is an H3 ###### 这里前后#数量不一致也没关系
+</code></pre><h2 id="区块引用-Blockquote"><a href="#区块引用-Blockquote" class="headerlink" title="区块引用 Blockquote"></a>区块引用 Blockquote</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/My-First-Article/" data-id="cix5un3nl0000ikfmf6s0bbhe" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/My-First-Article/" data-id="cix5uxo7q00009ofmvffqttgf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +160,7 @@ This is an H2
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cix5un3nv0001ikfmoxsal3dv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cix5uxo7y00019ofm5ioyz4dq" class="article-share-link">Share</a>
       
       
     </footer>
