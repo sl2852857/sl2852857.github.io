@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2016/12 | Xanxus的个人BLOG</title>
+  <title>Tomcat启动后访问页面报错，不能使用jstl问题记录 | Xanxus的个人BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一次搭建blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xanxus的个人BLOG">
-<meta property="og:url" content="http://yoursite.com/archives/2016/12/index.html">
+  <meta name="description" content="启动Tomcat后，访问本地的Demo的页面发生报错，主要提示的是：
+HTTP Status 500 - The absolute uri: http://Java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application
+问题原因该问题是页面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tomcat启动后访问页面报错，不能使用jstl问题记录">
+<meta property="og:url" content="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/index.html">
 <meta property="og:site_name" content="Xanxus的个人BLOG">
-<meta property="og:description" content="第一次搭建blog">
+<meta property="og:description" content="启动Tomcat后，访问本地的Demo的页面发生报错，主要提示的是：
+HTTP Status 500 - The absolute uri: http://Java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application
+问题原因该问题是页面">
+<meta property="og:updated_time" content="2016-12-28T02:16:05.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xanxus的个人BLOG">
-<meta name="twitter:description" content="第一次搭建blog">
+<meta name="twitter:title" content="Tomcat启动后访问页面报错，不能使用jstl问题记录">
+<meta name="twitter:description" content="启动Tomcat后，访问本地的Demo的页面发生报错，主要提示的是：
+HTTP Status 500 - The absolute uri: http://Java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application
+问题原因该问题是页面">
   
     <link rel="alternate" href="/atom.xml" title="Xanxus的个人BLOG" type="application/atom+xml">
   
@@ -66,77 +73,55 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" class="archive-article-date">
-  <time datetime="2016-12-28T02:07:45.000Z" itemprop="datePublished">12月 28</time>
+        <section id="main"><article id="post-Tomcat启动后访问页面报错，不能使用jstl问题记录" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" class="article-date">
+  <time datetime="2016-12-28T02:07:45.000Z" itemprop="datePublished">2016-12-28</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/">Tomcat启动后访问页面报错，不能使用jstl问题记录</a>
+    <h1 class="article-title" itemprop="name">
+      Tomcat启动后访问页面报错，不能使用jstl问题记录
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" class="archive-article-date">
-  <time datetime="2016-12-26T07:08:05.000Z" itemprop="datePublished">12月 26</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/">【我的第一篇BLOG】Markdown语法学习记录</a>
-    </h1>
-  
+        <p>启动Tomcat后，访问本地的Demo的页面发生报错，主要提示的是：</p>
+<p><code>HTTP Status 500 - The absolute uri: http://Java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application</code></p>
+<h3 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h3><p>该问题是页面中引入jstl库，但未加载jstl的jar包。</p>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>网上查询资料后发现问题是我之前因为启动demo失败，原因是加载jar包太多，修改了tomcat的catalina.properties配置文件中的 <code>tomcat.util.scan.DefaultJarScanner.jarsToSkip</code> 属性，该属性是启动tomcat时跳过jar包扫描，所以没有扫描jstl的jar包导致了访问页面后报错。</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/26/hello-world/" class="archive-article-date">
-  <time datetime="2016-12-26T04:06:27.077Z" itemprop="datePublished">12月 26</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/26/hello-world/">Hello World 你好 世界</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" data-id="cix8b8n9w0001ccfm7xzmbn09" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">【我的第一篇BLOG】Markdown语法学习记录</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
