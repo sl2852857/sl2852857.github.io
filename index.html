@@ -68,6 +68,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-重复jar包导致报错" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/28/重复jar包导致报错/" class="article-date">
+  <time datetime="2016-12-28T02:34:16.000Z" itemprop="datePublished">2016-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/28/重复jar包导致报错/">重复jar包导致报错</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="console报错"><a href="#console报错" class="headerlink" title="console报错"></a>console报错</h3><p><code>The method getJspApplicationContext(ServletContext) is undefined for the type JspFactory</code></p>
+<h3 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h3><p>项目中的jar包和Tomcat中自带的jar包有冲突</p>
+<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>删除低版本重复的jar包</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/28/重复jar包导致报错/" data-id="cixjphj7g00022sfmvmdk4y3v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Tomcat启动后访问页面报错，不能使用jstl问题记录" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" class="article-date">
@@ -98,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" data-id="cix8b8n9w0001ccfm7xzmbn09" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" data-id="cixjphj8200032sfmg7zw1gik" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,11 +180,35 @@
 <h3 id="2-2-类Atx语法（常用）"><a href="#2-2-类Atx语法（常用）" class="headerlink" title="2.2 类Atx语法（常用）"></a>2.2 类<a href="javascript:void(0);" target="_blank" rel="external">Atx</a>语法（常用）</h3><p>类Atx形式是在行首插入 1 到 6 个的 <code>#</code> 和一个空格对应 1 到 6 阶的标题，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># This is an H1</div><div class="line">## This is an H2</div><div class="line">###### This is an H6</div></pre></td></tr></table></figure></p>
 <p>也可以在行尾选择性的添加<code>#</code> ，数量不需要与行首对应，只是为了美观用，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># This is an H1 #</div><div class="line">## This is an H2 ##</div><div class="line">### This is an H3 ###### 这里前后#数量不一致也没关系</div></pre></td></tr></table></figure></p>
 <h2 id="3-区块引用-Blockquote"><a href="#3-区块引用-Blockquote" class="headerlink" title="3. 区块引用 Blockquote"></a>3. 区块引用 Blockquote</h2><p>Markdown 标记区块引用是使用类似 email 中用 <code>&gt;</code> 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 <code>&gt;</code> ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</div><div class="line">&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</div><div class="line">&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</div><div class="line">&gt; </div><div class="line">&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</div><div class="line">&gt; id sem consectetuer libero luctus adipiscing.</div></pre></td></tr></table></figure></p>
+<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 <code>&gt;</code> ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</div><div class="line">consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</div><div class="line">Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</div><div class="line"></div><div class="line">&gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</div><div class="line">id sem consectetuer libero luctus adipiscing.</div></pre></td></tr></table></figure></p>
+<p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 <code>&gt;</code> ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt; This is the first level of quoting.</div><div class="line">&gt;</div><div class="line">&gt; &gt; This is nested blockquote.</div><div class="line">&gt;</div><div class="line">&gt; Back to the first level.</div></pre></td></tr></table></figure></p>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt; ## 这是一个标题。</div><div class="line">&gt; </div><div class="line">&gt; 1.   这是第一行列表项。</div><div class="line">&gt; 2.   这是第二行列表项。</div><div class="line">&gt; </div><div class="line">&gt; 给出一些例子代码：</div><div class="line">&gt; </div><div class="line">&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);</div></pre></td></tr></table></figure></p>
+<p>任何像样的文本编辑器都能轻松地建立 email 型的引用。例如在 BBEdit 中，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p>
+<h2 id="4-列表"><a href="#4-列表" class="headerlink" title="4. 列表"></a>4. 列表</h2><p>Markdown 支持有序列表和无序列表。<br>无序列表使用星号、加号或是减号作为列表标记：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*   Red</div><div class="line">*   Green</div><div class="line">*   Blue</div></pre></td></tr></table></figure></p>
+<p>等同于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">+   Red</div><div class="line">+   Green</div><div class="line">+   Blue</div></pre></td></tr></table></figure></p>
+<p>也等同于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-   Red</div><div class="line">-   Green</div><div class="line">-   Blue</div></pre></td></tr></table></figure></p>
+<p>有序列表则使用数字接着一个英文句点：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1.  Bird</div><div class="line">2.  McHale</div><div class="line">3.  Parish</div></pre></td></tr></table></figure></p>
+<p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">	&lt;li&gt;Bird&lt;/li&gt;</div><div class="line">	&lt;li&gt;McHale&lt;/li&gt;</div><div class="line">	&lt;li&gt;Parish&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure></p>
+<p>如果你的列表标记写成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">3. Bird</div><div class="line">1. McHale</div><div class="line">8. Parish</div></pre></td></tr></table></figure></p>
+<p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。</p>
+<p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p>
+<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
+<p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div><div class="line">    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</div><div class="line">    viverra nec, fringilla in, laoreet vitae, risus.</div><div class="line">*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</div><div class="line">    Suspendisse id sem consectetuer libero luctus adipiscing.</div></pre></td></tr></table></figure>
+<p>但是如果你懒，那也行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div><div class="line">Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</div><div class="line">viverra nec, fringilla in, laoreet vitae, risus.</div><div class="line">*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</div><div class="line">Suspendisse id sem consectetuer libero luctus adipiscing.</div></pre></td></tr></table></figure></p>
+<p>如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 <code>&lt;p&gt;</code> 标签包起来，举例来说：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*   Bird</div><div class="line"></div><div class="line">*   Magic</div></pre></td></tr></table></figure></p>
+<p>会被转换为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">	&lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;</div><div class="line">	&lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1.  This is a list item with two paragraphs. Lorem ipsum dolor</div><div class="line">    sit amet, consectetuer adipiscing elit. Aliquam hendrerit</div><div class="line">    mi posuere lectus.</div><div class="line"></div><div class="line">    Vestibulum enim wisi, viverra nec, fringilla in, laoreet</div><div class="line">    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum</div><div class="line">    sit amet velit.</div><div class="line"></div><div class="line">2.  Suspendisse id sem consectetuer libero luctus adipiscing.</div></pre></td></tr></table></figure></p>
+<p>如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">*   This is a list item with two paragraphs.</div><div class="line"></div><div class="line">    This is the second paragraph in the list item. You&apos;re</div><div class="line">only required to indent the first line. Lorem ipsum dolor</div><div class="line">sit amet, consectetuer adipiscing elit.</div><div class="line"></div><div class="line">*   Another item in the same list.</div></pre></td></tr></table></figure></p>
+<p>如果要在列表项目内放进引用，那 &gt; 就需要缩进：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">*	A list item with a blockquote:</div><div class="line"></div><div class="line">	&gt; This is a blockquote</div><div class="line">    &gt; inside a list item.</div></pre></td></tr></table></figure></p>
+<p>如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*   一列表项包含一个列表区块：</div><div class="line"></div><div class="line">        &lt;代码写在这&gt;</div></pre></td></tr></table></figure></p>
+<p>当然，项目列表很可能会不小心产生，像是下面这样的写法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1986. What a great season.</div></pre></td></tr></table></figure></p>
+<p>首行数字 + 点 + 空格，要避免这样的情况，需要将点加上反斜杠：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1986\. What a great season.</div></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" data-id="cix8b8na20002ccfm7cftezlt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" data-id="cixjphj7b00012sfmb9fxxe21" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,7 +253,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cix8b8n9j0000ccfmc664njl3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cixjphj6y00002sfmgv0d59xr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -230,6 +293,10 @@
       <ul>
         
           <li>
+            <a href="/2016/12/28/重复jar包导致报错/">重复jar包导致报错</a>
+          </li>
+        
+          <li>
             <a href="/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/">Tomcat启动后访问页面报错，不能使用jstl问题记录</a>
           </li>
         
@@ -253,7 +320,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 Xanxus<br>
+      &copy; 2017 Xanxus<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
