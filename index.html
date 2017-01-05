@@ -97,7 +97,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/重复jar包导致报错/" data-id="cixjr83260001bofmwx38bjfp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/28/重复jar包导致报错/" data-id="cixjrjfee00031wfmtn119udu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" data-id="cixjr831y0000bofm2z9j8pm2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/28/Tomcat启动后访问页面报错，不能使用jstl问题记录/" data-id="cixjrjfe400021wfmahxiw7zh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -220,22 +220,27 @@
 <p>要建立一个<strong>行内式</strong>的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">This is [an example](http://example.com/ &quot;Title&quot;) inline link.</div><div class="line"></div><div class="line">[This link](http://example.net/) has no title attribute.</div></pre></td></tr></table></figure></p>
 <p>会产生：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;</div><div class="line">an example&lt;/a&gt; inline link.&lt;/p&gt;</div><div class="line"></div><div class="line">&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no</div><div class="line">title attribute.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
 <p>如果你是要链接到同样主机的资源，你可以使用相对路径：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">See my [About](/about/) page for details.</div></pre></td></tr></table></figure></p>
-<p><strong>参考式</strong>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：<br>    This is [an example][id] reference-style link.<br>你也可以选择性地在两个方括号中间加上一个空格：<br>    This is [an example] [id] reference-style link.<br>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</p>
-<pre><code>[id]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre><p>链接内容定义的形式为：</p>
+<p><strong>参考式</strong>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This is [an example][id] reference-style link.</div></pre></td></tr></table></figure></p>
+<p>你也可以选择性地在两个方括号中间加上一个空格：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This is [an example] [id] reference-style link.</div></pre></td></tr></table></figure></p>
+<p>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[id]: http://example.com/  &quot;Optional Title Here&quot;</div></pre></td></tr></table></figure></p>
+<p>链接内容定义的形式为：</p>
 <ul>
 <li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li>
 <li>接着一个冒号</li>
 <li>接着一个以上的空格或制表符</li>
 <li>接着链接的网址</li>
-<li>选择性地接着 title 内容，可以用单引号、双引号或是括弧包着<br>下面这三种链接的定义都是相同：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[foo]: http://example.com/  &quot;Optional Title Here&quot;</div><div class="line">[foo]: http://example.com/  &apos;Optional Title Here&apos;</div><div class="line">[foo]: http://example.com/  (Optional Title Here)</div></pre></td></tr></table></figure>
-</li>
+<li>选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</li>
 </ul>
+<p>下面这三种链接的定义都是相同：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[foo]: http://example.com/  &quot;Optional Title Here&quot;</div><div class="line">[foo]: http://example.com/  &apos;Optional Title Here&apos;</div><div class="line">[foo]: http://example.com/  (Optional Title Here)</div></pre></td></tr></table></figure></p>
 <p><strong>请注意：</strong>有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。<br>链接网址也可以用尖括号包起来：</p>
 <pre><code>[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
 </code></pre><p>你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[id]: http://example.com/longish/path/to/resource/here</div><div class="line">    &quot;Optional Title Here&quot;</div></pre></td></tr></table></figure></p>
 <p>网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。<br>链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[link text][a]</div><div class="line">[link text][A]</div></pre></td></tr></table></figure></p>
-<p><strong>隐式链接标记</strong>功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 “Google” 链接到 google.com，你可以简化成：<br><code>[Google][]</code><br>然后定义链接内容：<br><code>[Google]: http://google.com/</code><br>由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：<br><code>Visit [Daring Fireball][] for more information.</code><br>然后接着定义链接：<br><code>[Daring Fireball]: http://daringfireball.net/</code><br>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p>
+<p><strong>隐式链接标记</strong>功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 “Google” 链接到 google.com，你可以简化成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Google][]</div></pre></td></tr></table></figure></p>
+<p>然后定义链接内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Google]: http://google.com/</div></pre></td></tr></table></figure></p>
+<p>由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Visit [Daring Fireball][] for more information.</div></pre></td></tr></table></figure></p>
+<p>然后接着定义链接：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Daring Fireball]: http://daringfireball.net/</div></pre></td></tr></table></figure></p>
+<p>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p>
 <p>下面是一个参考式链接的范例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [Google] [1] than from</div><div class="line">[Yahoo] [2] or [MSN] [3].</div><div class="line"></div><div class="line">  [1]: http://google.com/        &quot;Google&quot;</div><div class="line">  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;</div><div class="line">  [3]: http://search.msn.com/    &quot;MSN Search&quot;</div></pre></td></tr></table></figure></p>
 <p>如果改成用链接名称的方式写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [Google][] than from</div><div class="line">[Yahoo][] or [MSN][].</div><div class="line"></div><div class="line">  [google]: http://google.com/        &quot;Google&quot;</div><div class="line">  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;</div><div class="line">  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;</div></pre></td></tr></table></figure></p>
 <p>上面两种写法都会产生下面的 HTML。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;</div><div class="line">title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from</div><div class="line">&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;</div><div class="line">or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
@@ -245,40 +250,46 @@
 <h2 id="2-强调"><a href="#2-强调" class="headerlink" title="2. 强调"></a>2. 强调</h2><p>Markdown 使用星号 <code>*</code> 和底线 <code>_</code> 作为标记强调字词的符号，被 <code>*</code> 或 <code>_</code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个 <code>*</code> 或 <code>_</code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">*single asterisks*</div><div class="line"></div><div class="line">_single underscores_</div><div class="line"></div><div class="line">**double asterisks**</div><div class="line"></div><div class="line">__double underscores__</div></pre></td></tr></table></figure></p>
 <p>会转成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;em&gt;single asterisks&lt;/em&gt;</div><div class="line"></div><div class="line">&lt;em&gt;single underscores&lt;/em&gt;</div><div class="line"></div><div class="line">&lt;strong&gt;double asterisks&lt;/strong&gt;</div><div class="line"></div><div class="line">&lt;strong&gt;double underscores&lt;/strong&gt;</div></pre></td></tr></table></figure></p>
 <p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p>
-<p>强调也可以直接插在文字中间：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">但是**如果你的 `*` 和 `_` 两边都有空白的话，它们就只会被当成普通的符号。**</div><div class="line"></div><div class="line">如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：</div><div class="line">```\*this text is surrounded by literal asterisks\*</div></pre></td></tr></table></figure></p>
-<h2 id="3-代码"><a href="#3-代码" class="headerlink" title="3. 代码"></a>3. 代码</h2><p>如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：<br><figure class="highlight plain"><figcaption><span>the `printf()` function.```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">会产生：</div><div class="line">```&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
-<p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：<br><figure class="highlight plain"><figcaption><span>is a literal backtick (`) here.``</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">这段语法会产生：</div><div class="line">```&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<p>强调也可以直接插在文字中间：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">un*frigging*believable</div></pre></td></tr></table></figure></p>
+<p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号。</strong></p>
+<p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\*this text is surrounded by literal asterisks\*</div></pre></td></tr></table></figure></p>
+<h2 id="3-代码"><a href="#3-代码" class="headerlink" title="3. 代码"></a>3. 代码</h2><p>如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Use the `printf()` function.</div></pre></td></tr></table></figure></p>
+<p>会产生：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">``There is a literal backtick (`) here.``</div></pre></td></tr></table></figure></p>
+<p>这段语法会产生：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></p>
 <p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">A single backtick in a code span: `` ` ``</div><div class="line"></div><div class="line">A backtick-delimited string in a code span: `` `foo` ``</div></pre></td></tr></table></figure></p>
 <p>会产生：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;</div><div class="line"></div><div class="line">&lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></p>
-<p>在代码区段内，<code>&amp;</code> 和尖括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：<br><figure class="highlight plain"><figcaption><span>don't use any `<blink>` tags.```</blink></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">转为：</div><div class="line">```&lt;p&gt;Please don&apos;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
-<p>你也可以这样写：<br><figure class="highlight plain"><figcaption><span>is the decimal-encoded equivalent of `&mdash;`.```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以产生：</div></pre></td></tr></table></figure></p>
-<p></p><p><code>&amp;#8212;</code> is the decimal-encoded<br>equivalent of <code>&amp;mdash;</code>.</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 4. 图片</div><div class="line">很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</div><div class="line"></div><div class="line">Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： **行内式**和**参考式**。</div><div class="line"></div><div class="line">行内式的图片语法看起来像是：</div></pre></td></tr></table></figure><p></p>
-<p><img src="/path/to/img.jpg" alt="Alt text"></p>
-<p><img src="/path/to/img.jpg" alt="Alt text" title="Optional title"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">详细叙述如下：</div><div class="line"></div><div class="line">*	一个惊叹号 !</div><div class="line">*	接着一个方括号，里面放上图片的替代文字</div><div class="line">*	接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 &apos;title&apos; 文字。</div><div class="line"></div><div class="line">参考式的图片语法则长得像这样：</div><div class="line">```![Alt text][id]</div></pre></td></tr></table></figure></p>
+<p>在代码区段内，<code>&amp;</code> 和尖括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Please don&apos;t use any `&lt;blink&gt;` tags.</div></pre></td></tr></table></figure></p>
+<p>转为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;Please don&apos;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<p>你也可以这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.</div></pre></td></tr></table></figure></p>
+<p>以产生：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded</div><div class="line">equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="4-图片"><a href="#4-图片" class="headerlink" title="4. 图片"></a>4. 图片</h2><p>很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</p>
+<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <strong>行内式</strong>和<strong>参考式</strong>。</p>
+<p>行内式的图片语法看起来像是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">![Alt text](/path/to/img.jpg)</div><div class="line"></div><div class="line">![Alt text](/path/to/img.jpg &quot;Optional title&quot;)</div></pre></td></tr></table></figure></p>
+<p>详细叙述如下：</p>
+<ul>
+<li>一个惊叹号 !</li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。</li>
+</ul>
+<p>参考式的图片语法则长得像这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![Alt text][id]</div></pre></td></tr></table></figure></p>
 <p>「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：</p>
 <pre><code>[id]: url/to/image  &quot;Optional title attribute&quot;
 </code></pre><p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签。</p>
-<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><h2 id="1-自动链接"><a href="#1-自动链接" class="headerlink" title="1. 自动链接"></a>1. 自动链接</h2><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Markdown 会转为：</div><div class="line">```&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;</div></pre></td></tr></table></figure></p>
-<p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Markdown 会转成：</div></pre></td></tr></table></figure></p>
-<p><a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
-&#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
-&#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;<br>&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">在浏览器里面，这段字串（其实是 `&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;`）会变成一个可以点击的「address@example.com」链接。</div><div class="line"></div><div class="line">（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</div><div class="line"></div><div class="line">## 2. 反斜杠</div><div class="line">Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 `&lt;em&gt;` 标签），你可以在星号的前面加上反斜杠：</div><div class="line">	\*literal asterisks\*</div><div class="line">Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</div></pre></td></tr></table></figure></p>
-<p>\   反斜线<br>`   反引号</p>
-<ul>
-<li>星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<h1 id="井字号"><a href="#井字号" class="headerlink" title="井字号"></a>井字号</h1></li>
-</ul>
-<ul>
-<li>加号</li>
-</ul>
-<ul>
-<li>减号<br>.   英文句点<br>!   惊叹号<br>```</li>
-</ul>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><h2 id="1-自动链接"><a href="#1-自动链接" class="headerlink" title="1. 自动链接"></a>1. 自动链接</h2><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;http://example.com/&gt;</div></pre></td></tr></table></figure></p>
+<p>Markdown 会转为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;address@example.com&gt;</div></pre></td></tr></table></figure></p>
+<p>Markdown 会转成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;</div><div class="line">&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;</div><div class="line">&amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;</div><div class="line">&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;</div></pre></td></tr></table></figure></p>
+<p>在浏览器里面，这段字串（其实是 <code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;</code>）会变成一个可以点击的「address@example.com」链接。</p>
+<p>（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</p>
+<h2 id="2-反斜杠"><a href="#2-反斜杠" class="headerlink" title="2. 反斜杠"></a>2. 反斜杠</h2><p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <code>&lt;em&gt;</code> 标签），你可以在星号的前面加上反斜杠：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\*literal asterisks\*</div></pre></td></tr></table></figure></p>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">\   反斜线</div><div class="line">`   反引号</div><div class="line">*   星号</div><div class="line">_   底线</div><div class="line">&#123;&#125;  花括号</div><div class="line">[]  方括号</div><div class="line">()  括弧</div><div class="line">#   井字号</div><div class="line">+   加号</div><div class="line">-   减号</div><div class="line">.   英文句点</div><div class="line">!   惊叹号</div></pre></td></tr></table></figure></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>Markdown的语法不是很难，应该说就是替那些不太会代码的人设计的，当然想要更酷炫的个人blog，还需要js和css加上好的设计来实现，以后有机会做个漂亮的个人blog出来~</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" data-id="cixjr832f0003bofmtd3kpw8a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/【我的第一篇BLOG】Markdown语法学习记录/" data-id="cixjrjfdm00011wfmmg9pm2l9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -323,7 +334,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cixjr832b0002bofmqvjbfojd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/26/hello-world/" data-id="cixjrjfcm00001wfmkvanx7q5" class="article-share-link">Share</a>
       
       
     </footer>
